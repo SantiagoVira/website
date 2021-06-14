@@ -12,14 +12,13 @@ const StyledSection = styled(Section)`
 `;
 const Link = styled.p`
   font-size: 28px;
-  max-width: 70%;
   line-height: 146%;
-  margin: 0;
   margin-top: 25px;
+  width: fit-content;
+  text-align: right;
   text-decoration: underline;
   color: black;
 
-  text-align: ${props => (props.ta ? props.ta : 'left')};
   transition: 0.2s ease-out;
 
   &:hover {
@@ -35,12 +34,12 @@ const Link = styled.p`
 `;
 const Text = styled.p`
   font-size: 28px;
-  max-width: 70%;
   line-height: 146%;
   margin: 0;
 
   word-wrap: break-word;
-  text-align: ${props => (props.ta ? props.ta : 'left')};
+  text-align: justify;
+  text-justify: inter-word;
 
   ${media.tablet`
     max-width: 100%;
@@ -61,7 +60,8 @@ const Row = styled.div`
 `;
 const Col = styled.div`
   flex: 0 0 auto;
-  width: ${props => (props.max ? '100%' : props.bigger ? '60%' : '40%')};
+  /*width: ${props => (props.max ? '100%' : props.bigger ? '60%' : '40%')};*/
+  width: 80%;
   align-items: center;
   justify-content: flex-start;
 
@@ -74,11 +74,11 @@ const Description = props => {
       <Container max>
         <Row>
           <Text>About</Text>
-          <Col>
+          <Col max>
             <Text ta="right">{props.description}</Text>
             {props.rsvp && (
               <a href={props.signup} target="_blank" rel="noreferrer">
-                <Link>Sign Up Today!</Link>
+                <Link ta="right">Sign Up Today!</Link>
               </a>
             )}
           </Col>
