@@ -15,7 +15,13 @@ const SummerCamp = () => {
         <Description
           rsvp
           signup="https://bit.ly/codecamp21"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          description={`
+          Calling all Middle School students! Are you interested in learning computer science and how to code by understanding the basics of a 
+          programming language? Well, you’re in luck! We are CODE, a nonprofit organization dedicated to expanding student tech engagement in 
+          your community! This year, we’re hosting a FREE virtual coding summer camp from July 5th to July 16th, Monday to Friday from 12-2 PM. 
+          You can choose to learn at your level and get quality tutoring lessons from experienced programmers all at no cost. 
+          If you have any questions or concerns, contact us at team@techcodes.org
+          `}
         />
       </div>
       <div data-scroll-section>
